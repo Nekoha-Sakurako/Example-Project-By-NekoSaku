@@ -7,7 +7,7 @@ Begin VB.Form SakuFormMain
    ClientTop       =   570
    ClientWidth     =   8850
    BeginProperty Font 
-      Name            =   "Î¢ÈíÑÅºÚ"
+      Name            =   "è£ç½·å›˜èœ"
       Size            =   26.25
       Charset         =   134
       Weight          =   400
@@ -18,11 +18,11 @@ Begin VB.Form SakuFormMain
    LinkTopic       =   "Form1"
    ScaleHeight     =   5580
    ScaleWidth      =   8850
-   StartUpPosition =   1  'ËùÓĞÕßÖĞĞÄ
+   StartUpPosition =   1  'ä¾­å—¤å®€å¶„ä¼‰
    Begin VB.CommandButton SakuStart 
-      Caption         =   "¤Ï¤¸¤á¤Æ"
+      Caption         =   "ã¯ã˜ã‚ã¦"
       BeginProperty Font 
-         Name            =   "Î¢ÈíÑÅºÚ"
+         Name            =   "è£ç½·å›˜èœ"
          Size            =   9
          Charset         =   134
          Weight          =   400
@@ -37,9 +37,9 @@ Begin VB.Form SakuFormMain
       Width           =   1215
    End
    Begin VB.CommandButton SakuHajimeru 
-      Caption         =   "Ê¼¤á¤í"
+      Caption         =   "å…µã‚ã‚"
       BeginProperty Font 
-         Name            =   "Î¢ÈíÑÅºÚ"
+         Name            =   "è£ç½·å›˜èœ"
          Size            =   9
          Charset         =   134
          Weight          =   400
@@ -55,7 +55,7 @@ Begin VB.Form SakuFormMain
    End
    Begin VB.Label SakuTitle 
       BackStyle       =   0  'Transparent
-      Caption         =   "¤³¤³¤Ç¤ÏÊÖ•øÈëÁ¦¤Ç¤Í"
+      Caption         =   "ã“ã“ã§ã¯è¿”Â•ï¿½è¨ŒÎ”ä»»"
       Height          =   2055
       Left            =   120
       TabIndex        =   0
@@ -63,17 +63,17 @@ Begin VB.Form SakuFormMain
       Width           =   8295
    End
    Begin VB.Menu File 
-      Caption         =   "¥Õ¥¡¥¤¥ë"
+      Caption         =   "ãƒ•ã‚¡ã‚¤ãƒ«"
       Begin VB.Menu Hello_world 
-         Caption         =   "¤³¤ó¤Ë¤Á¤Ï¡¢ÊÀ½ç..."
+         Caption         =   "ã“ã‚“ã«ã¡ã¯ã€å¼Šé †..."
          Shortcut        =   {F1}
       End
       Begin VB.Menu NewWindow 
-         Caption         =   "¥¦¥£¥ó¥É¥¦¤ò×÷³É¤¹¤ë"
+         Caption         =   "ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’æ¬æ’¹ã™ã‚‹"
          Shortcut        =   ^N
       End
       Begin VB.Menu Mind_Voice 
-         Caption         =   "¥Ş¥¤¥ó¥É¥Ü¥¤¥¹..."
+         Caption         =   "ãƒã‚¤ãƒ³ãƒ‰ãƒœã‚¤ã‚¹..."
          Shortcut        =   ^M
       End
       Begin VB.Menu ButtonMoveUtil 
@@ -81,14 +81,14 @@ Begin VB.Form SakuFormMain
          Shortcut        =   ^B
       End
       Begin VB.Menu Quit 
-         Caption         =   "½KÁË"
+         Caption         =   "Ké˜»"
          Shortcut        =   ^Q
       End
    End
    Begin VB.Menu Help 
-      Caption         =   "¥Ø¥ë¥×"
+      Caption         =   "ãƒ˜ãƒ«ãƒ—"
       Begin VB.Menu About 
-         Caption         =   "¤³¤Î¥¢¥×¥ê¤Ë¤Ä¤¤¤Æ"
+         Caption         =   "ã“ã®ã‚¢ãƒ—ãƒªã«ã¤ã„ã¦"
       End
    End
 End
@@ -97,13 +97,6 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-Private Sub Label1_Click()
-
-End Sub
-
-Private Sub Command1_Click()
-
-End Sub
 
 Private Sub About_Click()
 'C:\Windows\System32\winver.exe
@@ -127,16 +120,17 @@ End Sub
 
 Private Sub SakuHajimeru_Click()
 SakuTitle.Caption = "Hello,world"
-SakuStart.Caption = "¤Ï¤¸¤á¤Æ"
+SakuStart.Caption = "ã¯ã˜ã‚ã¦"
 End Sub
 
 Private Sub SakuStart_Click()
 SakuStart.Caption = "Hello,world"
-SakuTitle.Caption = "¤³¤³¤Ç¤ÏÊÖ•øÈëÁ¦¤Ç¤Í"
+SakuTitle.Caption = "ã“ã“ã§ã¯è¿”Â•ï¿½è¨ŒÎ”ä»»"
 End Sub
 
 Private Sub SakuTitle_Click()
-SakuTitle.Caption = "¤³¤³¤Ç¤ÏÊÖ•øÈëÁ¦¤Ç¤Í"
-SakuStart.Caption = "¤Ï¤¸¤á¤Æ"
-SakuHajimeru.Caption = "Ê¼¤á¤í"
+SakuTitle.Caption = "ã“ã“ã§ã¯è¿”Â•ï¿½è¨ŒÎ”ä»»"
+SakuStart.Caption = "ã¯ã˜ã‚ã¦"
+SakuHajimeru.Caption = "å…µã‚ã‚"
 End Sub
+
