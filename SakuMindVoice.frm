@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin VB.Form SakuMindVoice 
-   Caption         =   "¤³¤³¤Ç¤ÏÊÖ•øÈëÁ¦¤Ç¤Í"
+   Caption         =   "ã“ã“ã§ã¯è¿”Â•ï¿½è¨ŒÎ”ä»»"
    ClientHeight    =   6345
    ClientLeft      =   120
    ClientTop       =   465
@@ -8,11 +8,11 @@ Begin VB.Form SakuMindVoice
    LinkTopic       =   "Form1"
    ScaleHeight     =   6345
    ScaleWidth      =   10260
-   StartUpPosition =   3  '´°¿ÚÈ±Ê¡
+   StartUpPosition =   3  'å®Œç¬¥é«ªç¦
    Begin VB.CommandButton SakuVoiceCancel 
-      Caption         =   "¤ä¤á¤í"
+      Caption         =   "ã‚„ã‚ã‚"
       BeginProperty Font 
-         Name            =   "Î¢ÈíÑÅºÚ"
+         Name            =   "è£ç½·å›˜èœ"
          Size            =   15
          Charset         =   134
          Weight          =   400
@@ -27,9 +27,9 @@ Begin VB.Form SakuMindVoice
       Width           =   1815
    End
    Begin VB.CommandButton SakuVoiceNext 
-      Caption         =   "´Î¤®¤Ø"
+      Caption         =   "è‚ãã¸"
       BeginProperty Font 
-         Name            =   "Î¢ÈíÑÅºÚ"
+         Name            =   "è£ç½·å›˜èœ"
          Size            =   14.25
          Charset         =   134
          Weight          =   400
@@ -44,9 +44,9 @@ Begin VB.Form SakuMindVoice
       Width           =   1815
    End
    Begin VB.Label SakuVoiceTitle 
-      Caption         =   "ĞÄ¤ÎÕZ"
+      Caption         =   "ä¼‰ã®Z"
       BeginProperty Font 
-         Name            =   "Î¢ÈíÑÅºÚ"
+         Name            =   "è£ç½·å›˜èœ"
          Size            =   21.75
          Charset         =   134
          Weight          =   400
@@ -66,22 +66,12 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-Private Sub Label1_Click()
-
-End Sub
-
-Private Sub Saku_Click()
-
-End Sub
-
-Private Sub Command1_Click()
-
-End Sub
 
 Private Sub SakuVoiceCancel_Click()
 SakuMindVoice.Hide
 End Sub
 
 Private Sub SakuVoiceNext_Click()
-SakuVoiceTitle.Caption = "¤³¤ÎÅ®¤Î×Ó¤¬ºÃ¤­¤Ç¤¹"
+SakuVoiceTitle.Caption = "ã“ã®æººã®å¾¨ãŒæŒ«ãã§ã™"
 End Sub
+
