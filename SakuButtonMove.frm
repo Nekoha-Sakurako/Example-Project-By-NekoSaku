@@ -8,11 +8,11 @@ Begin VB.Form SakuButtonMove
    LinkTopic       =   "Form1"
    ScaleHeight     =   6045
    ScaleWidth      =   5610
-   StartUpPosition =   3  '����ȱʡ
+   StartUpPosition =   3  '´°¿ÚÈ±Ê¡
    Begin VB.CommandButton SakuMoveShow 
       Caption         =   "Show"
       BeginProperty Font 
-         Name            =   "΢���ź�"
+         Name            =   "Î¢ÈíÑÅºÚ"
          Size            =   10.5
          Charset         =   134
          Weight          =   400
@@ -29,7 +29,7 @@ Begin VB.Form SakuButtonMove
    Begin VB.CommandButton SakuMoveExec 
       Caption         =   "Move"
       BeginProperty Font 
-         Name            =   "΢���ź�"
+         Name            =   "Î¢ÈíÑÅºÚ"
          Size            =   10.5
          Charset         =   134
          Weight          =   400
@@ -50,13 +50,6 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-Private Sub Command2_Click()
-
-End Sub
-
-Private Sub Command1_Click()
-
-End Sub
 
 Private Sub SakuMoveExec_Click()
 SakuMoveExec.Top = SakuMoveExec.Top - 100
@@ -65,3 +58,4 @@ End Sub
 Private Sub SakuMoveShow_Click()
 SakuMoveExec.Visible = True
 End Sub
+
