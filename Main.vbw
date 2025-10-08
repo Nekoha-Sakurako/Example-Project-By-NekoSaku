@@ -1,3 +1,7 @@
-SakuFormMain = 0, 0, 0, 0, C, 26, 26, 1363, 674, C
-SakuMindVoice = 0, 0, 0, 0, C, 0, 0, 0, 0, C
-SakuButtonMove = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+SakuFormMain = 298, 179, 1293, 880, C, 914, 332, 1570, 833, C
+SakuMindVoice = 0, 0, 0, 0, C, -101, 526, 653, 1065, C
+SakuButtonMove = 0, 0, 0, 0, C, 455, 3, 897, 517, C
+SakuPrint = 0, 0, 0, 0, C, 451, 516, 1080, 969, C
+SakuCalculator = 104, 104, 839, 540, C, 905, 7, 1284, 327, C
+SakuGreeting = 237, 233, 1104, 766, C, -64, 376, 445, 658, C
+SakuAbout = 205, 220, 1542, 868, C, 16, 4, 449, 344, C

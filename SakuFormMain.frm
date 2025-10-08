@@ -31,7 +31,7 @@ Begin VB.Form SakuFormMain
          Strikethrough   =   0   'False
       EndProperty
       Height          =   495
-      Left            =   5040
+      Left            =   4920
       TabIndex        =   2
       Top             =   3480
       Width           =   1215
@@ -63,32 +63,39 @@ Begin VB.Form SakuFormMain
       Width           =   8295
    End
    Begin VB.Menu File 
-      Caption         =   "ファイル"
+      Caption         =   "File"
       Begin VB.Menu Hello_world 
-         Caption         =   "こんにちは、世界..."
+         Caption         =   "Hello world..."
          Shortcut        =   {F1}
       End
       Begin VB.Menu NewWindow 
-         Caption         =   "ウィンドウを作成する"
+         Caption         =   "New window"
          Shortcut        =   ^N
       End
       Begin VB.Menu Mind_Voice 
-         Caption         =   "マインドボイス..."
+         Caption         =   "Mind voice..."
          Shortcut        =   ^M
       End
       Begin VB.Menu ButtonMoveUtil 
          Caption         =   "Button Move Utility..."
          Shortcut        =   ^B
       End
+      Begin VB.Menu SampleCalc 
+         Caption         =   "Sample Calculator..."
+         Shortcut        =   ^L
+      End
+      Begin VB.Menu SimpleGreet 
+         Caption         =   "Simple Greeting for you..."
+      End
       Begin VB.Menu Quit 
-         Caption         =   "終了"
+         Caption         =   "Quit"
          Shortcut        =   ^Q
       End
    End
    Begin VB.Menu Help 
-      Caption         =   "ヘルプ"
+      Caption         =   "Help"
       Begin VB.Menu About 
-         Caption         =   "このアプリについて"
+         Caption         =   "About this app"
       End
    End
 End
@@ -98,7 +105,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub About_Click()
-'C:\Windows\System32\winver.exe
+SakuAbout.Show
 End Sub
 
 Private Sub ButtonMoveUtil_Click()
@@ -135,4 +142,12 @@ Private Sub SakuTitle_Click()
 SakuTitle.Caption = "ここでは手書入力でね"
 SakuStart.Caption = "はじめて"
 SakuHajimeru.Caption = "始めろ"
+End Sub
+
+Private Sub SampleCalc_Click()
+SakuCalculator.Show
+End Sub
+
+Private Sub SimpleGreet_Click()
+SakuGreeting.Show
 End Sub
